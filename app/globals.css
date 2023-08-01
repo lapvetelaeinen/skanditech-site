@@ -16,12 +16,25 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  :root {
+    --color-eggshell: 230 228 206;
+    --color-skandiblue: 0 5 42;
+    --color-stoneolive: 55 57 46;
+    --color-lightolive: 96 100 80;
+    --color-auroragreen: 140 255 138;
+    --color-aurorapurple: 136 78 226;
+    /* ... */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  /* Change highlight background color to black */
+  background: #b9ff82;
+  /* Change highlight text color to red */
+  color: black;
 }

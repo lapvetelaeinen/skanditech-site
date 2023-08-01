@@ -1,0 +1,23 @@
+.hero {
+  mask-image: url("../public/services-wave.svg"); /* The same SVG is used for mask-image */
+  -webkit-mask-image: url("../public/services-wave.svg"); /* For Safari support */
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: bottom;
+  mask-size: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    mask-size: 200vw;
+  }
+}
+
+.secondHero {
+  mask-image: url("../public/pink-waves.svg"); /* The same SVG is used for mask-image */
+  -webkit-mask-image: url("../public/pink-waves.svg"); /* For Safari support */
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: bottom;
+  mask-size: 100vw;
+}
