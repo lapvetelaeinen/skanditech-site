@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Map from "../_components/Map.js";
 import { useForm } from "react-hook-form";
+import Footer from "../_components/Footer.js";
 import bic from "../../public/bic-factory.jpg";
 import filip from "../../public/filip-lapvetelainen.jpg";
 import happyEmployees from "../../public/happy-employees.webp";
@@ -15,12 +16,12 @@ export default function Contact() {
 
   return (
     <main className="">
-      <div className="relative flex flex-col w-full gap-4 overflow-clip md:pt-20 pt-12 pb-36 bg-gradient-to-r from-eggshell via-eggshell to-transparent">
-        <div className="absolute top-0 md:-top-8 md:-right-[200px] -z-10 w-full min-h-screen opacity-[50%] md:opacity-[50%]">
+      <div className="relative flex flex-col w-full gap-4 overflow-clip md:pt-20 pt-12 pb-0 bg-gradient-to-r from-eggshell via-eggshell to-transparent ">
+        <div className="absolute md:-right-[200px] -z-10 w-full min-h-screen bg-eggshell">
           <Image
             src={happyEmployees}
             fill
-            className={`${styles.hero} object-cover object-top`}
+            className={`${styles.hero} object-cover object-top opacity-50 -translate-y-[100px]`}
           />
         </div>
         <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 mt-6">
@@ -34,16 +35,16 @@ export default function Contact() {
               <h2 className="font-head font-medium text-xl text-lightolive uppercase">
                 Kontakta oss
               </h2>
-              <h1 className="md:text-6xl text-5xl font-head mt-6 mb-8 font-semibold capitalize">
-                Lösningen är
-                <br className="hidden md:block" /> bara ett meddelande
+              <h1 className="md:text-6xl text-5xl font-head mt-6 mb-8 font-semibold">
+                Vilka möjligheter
+                <br className="hidden md:block" /> väntar på att
                 <br />
-                bort
+                utforskas?
               </h1>
               <div className="w-[180px] h-[1px] bg-lightolive" />
               <p className="text-2xl text-stoneolive pt-8 pb-14">
                 Dela med dig av dina frågor och tankar
-                <br className="hidden md:block" /> så guidar vi in dig på rätt
+                <br className="hidden md:block" /> så guidar vi dig på rätt
                 spår! <br className="hidden md:block" /> Du kan ringa och maila
                 oss{" "}
                 <a
@@ -103,10 +104,13 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div id="contact" className="flex justify-center md:mb-36 mb-16">
+      <div
+        id="contact"
+        className="flex justify-center md:pt-36 pt-12 md:pb-24 pb-16 bg-eggshell"
+      >
         <div className="md:w-[380px] w-[200px] h-[1px] bg-lightolive" />
       </div>
-      <div className="relative md:mx-36 mb-32">
+      <div className="relative md:px-36 md:pb-36 bg-eggshell">
         <div className="flex md:flex-row flex-col gap-16">
           <div className="md:inline-block flex flex-col items-center">
             <p className="text-2xl text-stoneolive">Skanditech AB</p>
@@ -136,9 +140,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <div className="w-full h-[1px] bg-lightolive md:mb-[500px]"></div>
 
       {/*FOOTER*/}
-      <div className="bg-skandiblue h-[400px]">lala</div>
+      <Footer />
     </main>
   );
 }

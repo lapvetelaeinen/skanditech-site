@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Case from "./_components/Case.js";
+import Footer from "./_components/Footer.js";
+import ContactSection from "./_components/ContactSection.js";
 import { useEffect, useState, useRef } from "react";
 import filip from "../public/filip-lapvetelainen.jpg";
-import aurora from "../public/northern-lights.png";
 import greenWaves from "../public/green-waves.svg";
-import skanditechIcon from "../public/skanditech-icon.svg";
-import users from "../public/users.svg";
 import heart from "../public/heart-circle.svg";
 import target from "../public/bullseye-pointer.svg";
 import chart from "../public/chart-line.svg";
@@ -80,8 +80,8 @@ export default function Home() {
     <main className="min-h-screen">
       {/*HERO SECTION*/}
 
-      <div className="w-full h-screen flex items-start bg-gradient-to-t pb-24">
-        <div className="absolute w-full h-screen -z-10 opacity-75 overflow-hidden">
+      <div className="w-full bg-eggshell h-screen flex items-start bg-gradient-to-t pb-24">
+        <div className="absolute w-full h-screen -z-0 opacity-75 overflow-hidden">
           <Image
             src={greenWaves}
             alt="green animated northern lights"
@@ -89,17 +89,18 @@ export default function Home() {
             className="absolute h-full object-cover object-left md:object-center md:object-contain md:scale-100 left-[100px]"
           />
         </div>
-        <div className="pl-6 md:pl-0 w-full md:mx-52 flex justify-between md:pt-16 md:items-center">
+        <div className="pl-6 max-h-screen md:pl-0 w-full md:mx-52 flex justify-between md:pt-16 md:items-center z-40">
           <div>
-            <h1 className="md:text-7xl text-6xl font-head text-skandiblue font-medium mb-5 mt-24 capitalize">
+            <h1 className="md:text-7xl text-6xl font-head text-skandiblue font-medium mb-4 md:mb-8 mt-24">
               Krossa <br /> <strong>era mål</strong> <br /> med rätt{" "}
               <br className="md:hidden block" />
               <strong>tech</strong>
             </h1>
-            <p className="md:text-3xl text-2xl text-stoneolive mb-8">
-              Vi skräddarsyr <strong>hemsidor</strong>, <br />{" "}
-              <strong>appar</strong> och <strong>interna system</strong> <br />{" "}
-              med fokus på era specifika <br /> mål och utmaningar
+            <p className="md:text-3xl text-2xl text-stoneolive mb-6 md:mb-14">
+              Vi skräddarsyr <br /> <strong>hemsidor</strong> och{" "}
+              <strong>appar</strong> <br /> med fokus på era
+              <br />
+              specifika mål och <br className="md:hidden block" /> utmaningar
             </p>
             <div className="flex gap-6">
               <Link href={"/kontakta-oss"}>
@@ -179,7 +180,7 @@ export default function Home() {
             <div className="w-[180px] h-[1px] bg-lightolive" />
           </div>
           <div className="grid md:grid-cols-2 md:grid-rows-2 gap-12 z-10 mt-16 md:mt-36 md:mx-56 mx-4 mb-16">
-            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:bg-[#b9ff82] hover:-translate-y-4 transition-transform">
+            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:-translate-y-4 transition-transform">
               <div className="flex items-center gap-6 text-skandiblue font-semibold mb-3">
                 <Image src={target} width={45} alt="cursor target icon" />
                 <h3 className="text-3xl">Målinriktade lösningar</h3>
@@ -193,7 +194,7 @@ export default function Home() {
                 lösning som är optimerad att uppnå ett förutbestämt mål.
               </p>
             </div>
-            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:bg-[#b9ff82] hover:-translate-y-4 transition-transform">
+            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:-translate-y-4 transition-transform">
               <div className="flex items-center gap-6 text-skandiblue font-semibold mb-3">
                 <Image src={chart} width={45} alt="statistics chart icon" />
                 <h3 className="text-3xl">Data-drivna optimeringar</h3>
@@ -205,7 +206,7 @@ export default function Home() {
                 Allt för att säkerställa att vi är påväg mot det uppsatta målet.
               </p>
             </div>
-            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:bg-[#b9ff82] hover:-translate-y-4 transition-transform">
+            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:-translate-y-4 transition-transform">
               <div className="flex items-center gap-6 text-skandiblue font-semibold mb-3">
                 <Image src={heart} width={45} alt="heart in circle icon" />
                 <h3 className="text-3xl">Starkare varumärke</h3>
@@ -219,7 +220,7 @@ export default function Home() {
                 hjälper vi er gärna med detta.
               </p>
             </div>
-            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:bg-[#b9ff82] hover:-translate-y-4 transition-transform">
+            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:-translate-y-4 transition-transform">
               <div className="flex items-center gap-6 text-skandiblue font-semibold mb-3">
                 <Image src={hands} width={45} alt="hands shaking icon" />
                 <h3 className="text-3xl">Långsiktiga relationer</h3>
@@ -244,45 +245,22 @@ export default function Home() {
         </div>
       </div>
       {/*TESTIMONIALS SECTION*/}
-      <div className="md:px-52 pb-24 pt-12 md:pt-0 md:mt-36 bg-eggshell">
+      <div className="md:px-52 pb-24 pt-12 md:pt-36 bg-eggshell">
         <div className="md:text-center flex flex-col items-center">
           <h3 className="font-head font-medium text-xl text-lightolive uppercase">
             Referenser
           </h3>
-          <h2 className="text-5xl mx-8 text-skandiblue text-center font-head leading-tight mt-6 mb-8 font-semibold capitalize">
+          <h2 className="text-5xl mx-8 pb-4 md:pb-12 text-skandiblue text-center font-head leading-tight mt-6 mb-8 font-semibold capitalize">
             Tidigare projekt
           </h2>
         </div>
-        <div className="relative overflow-clip border-2 mx-4 md:mx-0 border-lightolive md:px-24 md:py-20 rounded-xl flex md:flex-row flex-col-reverse justify-between items-center md:gap-28 md:mt-20 mt-8">
-          <div className="flex-1">
-            <h4 className="font-head text-skandiblue font-bold md:text-5xl text-4xl md:mt-0 mt-6 md:px-0 px-4">
-              Renoverad webshop optimerad för ökad försäljning
-            </h4>
-            <p className="italic text-lightolive md:mt-6 mt-2 md:px-0 px-4">
-              Drinkbolaget
-            </p>
-            <div className="w-[140px] h-[1px] bg-lightolive opacity-50 mt-3 md:mx-0 mx-4" />
-            <p className="md:text-xl text-lg mt-4 text-stoneolive md:px-0 px-4">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
-              esse eos est quam iusto velit dolor ut tenetur nemo error?
-            </p>
-            <div className="flex pt-6 md:pt-0">
-              <Link href={"/kundcase/drinkbolaget"}>
-                <button className="z-10 flex-1 md:flex-initial md:mx-0 mx-4 my-4 px-12 py-4 bg-skandiblue text-neutral-100 rounded-lg text-xl hover:scale-105 duration-100 text-center md:mt-12">
-                  Läs mer om projektet
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div className="relative w-full h-[300px] md:w-[400px] md:h-[500px]">
-            <Image
-              alt="drinkbolaget project"
-              src={drinkbolaget}
-              fill
-              className="md:rounded-lg md:drop-shadow-card object-cover"
-            />
-          </div>
-        </div>
+        <Case
+          businessCase={{
+            name: "Rouge nattklubb",
+            title: "Biljettsystem och hemsida",
+            desc: "det blev kaos i början men senare löste vi allt",
+          }}
+        />
         <div className="flex flex-col items-center mt-24 md:mt-44">
           <Link href={"/kundcase"}>
             <button className="border-2 border-skandiblue px-12 py-4 text-skandiblue rounded-lg text-2xl hover:scale-105 duration-100 text-center mb-16">
@@ -294,45 +272,12 @@ export default function Home() {
       </div>
       {/*END TESTIMONIALS SECTION*/}
       {/*CONTACT SECTION*/}
-      <div className="relative bg-gradient-to-tl from-neutral-200 to-[#f3f2f0] md:px-52 flex flex-col md:flex-row justify-center pt-12 md:pt-24 md:pb-[100px] pb-12 md:gap-60 items-center overflow-clip">
-        <div className="absolute -z-0 md:top-0 right-0 -rotate-[30deg] translate-x-[250px] translate-y-[300px]">
-          <Image
-            alt="waves"
-            src={skanditechIcon}
-            className="w-[1500px] scale-[250%] md:scale-100 pointer-events-none select-none"
-          />
-        </div>
-        <div>
-          <h3 className="font-head font-medium text-xl text-lightolive md:mt-12 uppercase">
-            Ta kontakt
-          </h3>
-          <h2 className="text-5xl font-head mt-6 mb-8 font-semibold capitalize">
-            Vi ser fram
-            <br /> emot att
-            <br /> prata med dig
-          </h2>
-          <div className="w-[250px] h-[1px] bg-lightolive" />
-          <p className="text-2xl text-stoneolive mt-8">
-            Vi skräddarsyr hemsidor, <br /> appar och interna system <br /> med
-            fokus på era specifika <br /> mål och utmaningar
-          </p>
-        </div>
-        <div className="md:max-w-[300px] max-w-[75%] text-center">
-          <div className="relative mb-5 mt-16 md:mt-0">
-            <Image
-              alt="Filip Lapveteläinen"
-              src={filip}
-              className="rounded-full md:drop-shadow-md select-none pointer-events-none"
-            />
-            <div className="absolute bottom-5 left-5 w-[50px] h-[50px] bg-gradient-to-t from-green-500 to-auroragreen drop-shadow-md rounded-full"></div>
-          </div>
-          <button className="relative bg-skandiblue hover:scale-105 duration-100 px-12 py-4 rounded-full text-2xl text-white z-10">
-            Prata med Filip
-          </button>
-        </div>
-      </div>
+      <ContactSection color="white" />
+      <div className="w-full h-[1px] bg-lightolive md:mb-[500px]"></div>
+
       {/*FOOTER*/}
-      <div className="relative w-full h-[400px] bg-gradient-to-tl from-neutral-200 to-[#f3f2f0] drop-shadow-card"></div>
+
+      <Footer />
 
       {/*END USP SECTION*/}
     </main>
