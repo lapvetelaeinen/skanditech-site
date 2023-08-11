@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <main className="">
-      <div className="relative flex flex-col w-full gap-4 overflow-clip pb-0 bg-gradient-to-r from-eggshell via-eggshell to-transparent h-screen">
+      <div className="relative flex flex-col w-full gap-4 overflow-clip pb-0 bg-gradient-to-r from-eggshell via-eggshell to-transparent min-h-screen">
         <div className="absolute md:-right-[200px] -z-10 w-full min-h-screen bg-eggshell">
           <Image
             alt="Bild på glada medarbetare"
@@ -62,7 +62,7 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <div className="md:w-[500px] w-full px-4 md:px-0 md:mr-36">
+          <div className="md:w-[500px] w-full px-4 md:px-0 md:mr-36 md:bg-gradient-to-t md:from-transparent md:via-transparent md:to-transparent bg-gradient-to-t from-eggshell via-eggshell to-transparent">
             <div className="flex justify-end gap-2 items-end mb-8 w-full">
               <h3 className="text-stoneolive">
                 Vi svarar <strong>alltid</strong> <br /> inom 24 timmar!
