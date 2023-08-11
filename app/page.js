@@ -133,54 +133,32 @@ export default function Home() {
 
       <div
         id="intro"
-        className="relative text-white flex flex-col justify-center items-"
+        className="relative text-white flex flex-col justify-center items-center"
       >
-        <div className="bg-gradient-to-tl from-neutral-200 to-[#f3f2f0]">
-          <h3 className="mb-12 pl-6 md:pl-0 font-head md:text-center mt-24 md:mt-36 font-medium text-xl text-lightolive uppercase">
-            Varför skanditech?
-          </h3>
-
-          <div className="flex flex-col md:gap-2 justify-center mx-auto">
-            <div id="uspHeading" className="mx-auto relative">
-              <div
-                id="progressBarTop"
-                className="absolute top-0 left-0 h-full bg-[#b9ff82]"
-              ></div>
-              <h2 className="absolute top-0 left-0 text-5xl px-6 md:text-center font-head leading-normal text-skandiblue font-semibold">
-                Affärsnytta, affärsnytta,
-              </h2>
-              <h2 className="text-5xl px-6 md:text-center font-head leading-normal text-skandiblue font-semibold">
-                Affärsnytta, affärsnytta,
-              </h2>
-            </div>
-            <div className="md:mx-auto relative">
-              <div
-                id="progressBarBot"
-                className="absolute top-0 left-0 h-full bg-[#b9ff82]"
-              ></div>
-              <h2 className="absolute top-0 left-0 text-5xl px-6 md:text-center font-head leading-normal text-skandiblue font-semibold">
-                affärsnytta.
-              </h2>
-              <h2 className="text-5xl px-6 md:text-center font-head leading-normal text-skandiblue font-semibold">
-                affärsnytta.
-              </h2>
-            </div>
+        <div className="bg-gradient-to-tl from-neutral-200 to-[#f3f2f0] pt-12 md:pt-36">
+          <div className="md:text-center flex flex-col md:items-center">
+            <h3 className="font-head pl-6 md:pl-0 font-medium text-xl text-lightolive uppercase">
+              Varför Skanditech?
+            </h3>
+            <h2 className="text-4xl md:text-5xl mx-6 md:mx-8 md:pb-6 text-skandiblue md:text-center font-head leading-tight md:leading-snug mt-6 mb-8 font-semibold">
+              Vi levererar mer <br className="hidden md:block" /> än digitala
+              lösningar
+            </h2>
           </div>
-          <p className="text-2xl pl-6 md:pl-0 md:text-center text-stoneolive mb-4 mt-8">
+          <p className="text-xl md:text-2xl pl-6 md:pl-0 md:text-center text-stoneolive mb-4">
             Det är ingen hemlighet att nya plattformar och outsourcing
-            <br /> gör det möjligt att skapa hemsidor och appar till förmånliga
+            <br /> gör det möjligt att skapa hemsidor och appar till rekordlåga
             priser.
           </p>
-          <p className="text-2xl px-6 md:px-0  text-stoneolive md:text-center mb-20">
-            Så låt oss berätta vad som gör oss annorlunda
-            <br /> och hur{" "}
+          <p className="text-xl md:text-2xl px-6 md:px-0  text-stoneolive md:text-center mb-20">
+            Så låt oss berätta vad som gör oss annorlunda och hur <br />
             <strong>vi kommer bidra i resan mot era långsiktiga mål.</strong>
           </p>
           <div className="w-full flex md:justify-center pl-6 md:pl-0">
             <div className="w-[180px] h-[1px] bg-lightolive" />
           </div>
-          <div className="grid md:grid-cols-2 md:grid-rows-2 gap-12 z-10 mt-16 md:mt-36 md:mx-56 mx-4 mb-16">
-            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:-translate-y-4 transition-transform">
+          <div className="grid md:grid-cols-2 md:grid-rows-2 gap-12 z-10 mt-16 md:mt-24 md:mx-56 mx-4 mb-16">
+            <div className="flex flex-col px-6 py-4 rounded-lg md:hover:-translate-y-4 transition-transform">
               <div className="flex items-center gap-6 text-skandiblue font-semibold mb-3">
                 <Image src={target} width={45} alt="cursor target icon" />
                 <h3 className="text-3xl">Målinriktade lösningar</h3>
@@ -194,7 +172,7 @@ export default function Home() {
                 lösning som är optimerad att uppnå ett förutbestämt mål.
               </p>
             </div>
-            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:-translate-y-4 transition-transform">
+            <div className="flex flex-col px-6 py-4 rounded-lg md:hover:-translate-y-4 transition-transform">
               <div className="flex items-center gap-6 text-skandiblue font-semibold mb-3">
                 <Image src={chart} width={45} alt="statistics chart icon" />
                 <h3 className="text-3xl">Data-drivna optimeringar</h3>
@@ -206,7 +184,7 @@ export default function Home() {
                 Allt för att säkerställa att vi är påväg mot det uppsatta målet.
               </p>
             </div>
-            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:-translate-y-4 transition-transform">
+            <div className="flex flex-col px-6 py-4 rounded-lg md:hover:-translate-y-4 transition-transform">
               <div className="flex items-center gap-6 text-skandiblue font-semibold mb-3">
                 <Image src={heart} width={45} alt="heart in circle icon" />
                 <h3 className="text-3xl">Starkare varumärke</h3>
@@ -220,7 +198,7 @@ export default function Home() {
                 hjälper vi er gärna med detta.
               </p>
             </div>
-            <div className="flex flex-col px-6 py-4 border-2 border-stoneolive rounded-lg hover:-translate-y-4 transition-transform">
+            <div className="flex flex-col px-6 py-4 rounded-lg md:hover:-translate-y-4 transition-transform">
               <div className="flex items-center gap-6 text-skandiblue font-semibold mb-3">
                 <Image src={hands} width={45} alt="hands shaking icon" />
                 <h3 className="text-3xl">Långsiktiga relationer</h3>
@@ -237,7 +215,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Link href={"/vara-tjanster"}>
-              <button className="bg-skandiblue z-10 px-12 py-4 text-neutral-50 rounded-lg text-2xl hover:scale-105 duration-100 text-center mt-4 md:mt-16 mb-24">
+              <button className="z-10 px-12 py-4 text-stoneolive border-2 border-stoneolive rounded-lg text-2xl hover:scale-105 duration-100 text-center mt-4 md:mt-16 mb-24">
                 Se hur vi jobbar
               </button>
             </Link>
@@ -250,7 +228,7 @@ export default function Home() {
           <h3 className="font-head font-medium text-xl text-lightolive uppercase">
             Referenser
           </h3>
-          <h2 className="text-5xl mx-8 pb-4 md:pb-12 text-skandiblue text-center font-head leading-tight mt-6 mb-8 font-semibold capitalize">
+          <h2 className="text-4xl md:text-5xl mx-8 pb-4 md:pb-12 text-skandiblue text-center font-head leading-tight mt-6 mb-8 font-semibold">
             Tidigare projekt
           </h2>
         </div>

@@ -8,10 +8,10 @@ export default function Footer() {
           <p className="text-skandiblue text-center md:text-start font-head text-4xl md:text-5xl font-semibold md:pt-0 pt-24">
             Föreställ dig att...
           </p>
-          <p className="text-stoneolive text-center md:text-start text-2xl md:pt-6 pt-4">
+          <p className="text-stoneolive text-center md:text-start text-xl md:text-2xl md:pt-6 pt-4">
             ...börja varje måndag med en innovativ idé...{" "}
           </p>
-          <p className="text-stoneolive text-center md:text-start text-2xl md:pt-0 mb-4">
+          <p className="text-stoneolive text-center md:text-start text-xl md:text-2xl md:pt-0 mb-4">
             ...levererad rakt ner i din mail, lagomt till morgonkaffet.
           </p>
           <p className="text-lightolive text-center md:text-start md:text-stoneolive text-xl mb-6">
@@ -21,19 +21,20 @@ export default function Footer() {
           <form
             action="
             "
-            className="flex md:flex-row flex-col gap-4 md:pt-0 pt-6 md:pb-0 pb-12"
+            className="flex md:flex-row flex-col gap-4 md:pt-0 pt-6 md:pb-0 pb-12 drop-shadow-card "
           >
             <input
               type="email"
               placeholder="Ange din email"
-              className="text-xl text-center md:text-start py-4 px-4 rounded-md bg-white border-2 border-black border-opacity-50 md:border-opacity-100"
+              className="text-xl text-center md:text-start py-4 px-4 rounded-md bg-white md:border-opacity-100 border-2"
             />
             <input
               type="submit"
               value={"Prenumerera på idéer"}
-              className="text-xl py-4 px-8 bg-[#b9ff82] rounded-md border-2 border-black border-opacity-25 md:border-opacity-50 drop-shadow-lg md:drop-shadow-card cursor-pointer md:hover:translate-x-2 transition-all"
+              className="text-xl py-4 px-8 bg-[#b9ff82] rounded-md cursor-pointer md:hover:translate-x-2 transition-all"
             />
           </form>
+          <div className="w-[200px] md:hidden mx-auto mt-4 h-[1px] bg-lightolive"></div>
         </div>
         <div className="flex md:static absolute bottom-4 left-4 md:flex-1 w-[300px] justify-start items-start md:justify-end md:items-end gap-y-2 gap-x-3 flex-wrap md:h-full">
           <Link href={"/kontakta-oss"}>

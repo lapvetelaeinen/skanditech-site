@@ -194,17 +194,17 @@ export default function Testimonials() {
               <form
                 action="
             "
-                className="flex md:flex-row flex-col gap-4 md:pt-0 pt-6 md:pb-0 pb-12"
+                className="flex md:flex-row flex-col gap-4 md:pt-0 pt-6 md:pb-0 pb-12 drop-shadow-card"
               >
                 <input
                   type="email"
                   placeholder="Ange din email"
-                  className="text-xl text-center md:text-start py-4 px-4 rounded-md bg-white border-2 border-black border-opacity-50 md:border-opacity-100"
+                  className="text-xl text-center md:text-start py-4 px-4 rounded-md bg-white border-2 "
                 />
                 <input
                   type="submit"
                   value={"Prenumerera på idéer"}
-                  className="text-xl py-4 px-8 bg-[#b9ff82] rounded-md border-2 border-black border-opacity-25 md:border-opacity-50 drop-shadow-lg md:drop-shadow-card cursor-pointer md:hover:translate-x-2 transition-all"
+                  className="text-xl py-4 px-8 bg-[#b9ff82] rounded-md cursor-pointer md:hover:translate-x-2 transition-all"
                 />
               </form>
             </div>
