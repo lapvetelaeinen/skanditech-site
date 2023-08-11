@@ -16,6 +16,7 @@ export default function About() {
       <div className="relative flex flex-col w-full gap-4 overflow-clip pb-28 bg-gradient-to-r from-eggshell via-eggshell to-transparent">
         <div className="absolute md:-right-[200px] -z-10 w-full min-h-screen bg-eggshell">
           <Image
+            alt="Bild på glada medarbetare"
             src={happyEmployees}
             fill
             className={`${serviceStyle.hero} object-cover object-top opacity-50`}
@@ -53,7 +54,11 @@ export default function About() {
             </div>
           </div>
           <div className="max-w-[400px] hidden md:block">
-            <Image src={skanditechTeam} className="rounded-full" />
+            <Image
+              alt="Medarbetarna på Skanditech"
+              src={skanditechTeam}
+              className="rounded-full"
+            />
           </div>
         </div>
       </div>
@@ -64,6 +69,7 @@ export default function About() {
         <div className="absolute w-[800px] h-[800px] bg-aurorapurple rounded-full blur-[200px] opacity-25 left-0 top-0 -translate-x-[200px] -translate-y-[300px]"></div>
         <div className="relative flex flex-col items-center gap-6 text-[#e4e4e4] z-10 max-w-[800px]">
           <Image
+            alt="Citattecken"
             src={quotes}
             width={100}
             className="absolute left-0 translate-y-[-110%] ml-6 md:ml-0 md:translate-y-0 md:translate-x-[-130%]"
@@ -84,13 +90,18 @@ export default function About() {
       <div className="relative w-full pb-24 -z-10 md:mx-0 bg-eggshell">
         <div className="absolute top-0 md:-top-[175px] -z-10 w-full min-h-screen opacity-50">
           <Image
+            alt="Glada medarbetare"
             src={happyEmployees}
             className={`${styles.hero} object-cover object-top md:w-full md:scale-100`}
           />
         </div>
         <div className="flex items-end min-h-screen justify-between px-12 md:flex-row flex-col md:pt-52 bg-gradient-to-r from-eggshell to-transparent">
           <div className="max-w-[400px] ml-52 hidden md:block">
-            <Image src={skanditechTeam} className="rounded-full" />
+            <Image
+              alt="Medarbetarna på Skanditech"
+              src={skanditechTeam}
+              className="rounded-full"
+            />
           </div>
           <div className="max-w-[600px]">
             <h2 className="font-head text-xl font-medium uppercase text-lightolive mt-20">

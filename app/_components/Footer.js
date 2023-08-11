@@ -8,10 +8,10 @@ export default function Footer() {
           <p className="text-skandiblue text-center md:text-start font-head text-4xl md:text-5xl font-semibold md:pt-0 pt-24">
             Föreställ dig att...
           </p>
-          <p className="text-stoneolive text-center md:text-start text-xl md:text-2xl md:pt-6 pt-4">
+          <p className="text-stoneolive text-center md:text-start text-2xl md:pt-6 pt-4">
             ...börja varje måndag med en innovativ idé...{" "}
           </p>
-          <p className="text-stoneolive text-center md:text-start text-xl md:text-2xl md:pt-0 mb-4">
+          <p className="text-stoneolive text-center md:text-start text-2xl md:pt-0 mb-4">
             ...levererad rakt ner i din mail, lagomt till morgonkaffet.
           </p>
           <p className="text-lightolive text-center md:text-start md:text-stoneolive text-xl mb-6">

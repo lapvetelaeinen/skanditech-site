@@ -16,6 +16,7 @@ export default function Services() {
       <div className="relative flex flex-col w-full gap-4 overflow-clip pb-36 bg-gradient-to-r from-eggshell via-eggshell to-transparent">
         <div className="absolute md:-right-[200px] -z-10 w-full min-h-screen bg-eggshell">
           <Image
+            alt="Glada medarbetare"
             src={happyEmployees}
             fill
             className={`${styles.hero} object-cover object-top opacity-50 translate-y-[-10px]`}
@@ -55,21 +56,26 @@ export default function Services() {
         <div className="absolute w-[800px] h-[800px] bg-auroragreen rounded-full blur-[200px] opacity-25 right-0 bottom-0 md:translate-x-[200px] md:translate-y-[500px]"></div>
         <div className="absolute w-[800px] h-[800px] bg-aurorapurple rounded-full blur-[200px] opacity-25 left-0 top-0 md:-translate-x-[200px] md:-translate-y-[300px]"></div>
         <div className="flex flex-col items-center gap-6 text-[#e4e4e4] mb-3 z-10">
-          <Image src={fistRaised} width={45} />
+          {/* <Image src={fistRaised} width={45} /> */}
           <h3 className="text-3xl">Flexibel planering</h3>
         </div>
         <div className="flex flex-col items-center gap-6 text-[#e4e4e4] mb-3 z-10">
-          <Image src={fistRaised} width={45} />
+          {/* <Image src={fistRaised} width={45} /> */}
           <h3 className="text-3xl">Stegvis utveckling</h3>
         </div>
         <div className="flex flex-col items-center gap-6 text-[#e4e4e4] mb-3 z-10">
-          <Image src={fistRaised} width={45} />
+          {/* <Image src={fistRaised} width={45} /> */}
           <h3 className="text-3xl">Nära dialog</h3>
         </div>
       </div>
       <div className="relative w-full -z-0">
         <div className="absolute top-0 right-0 bg-eggshell">
-          <Image src={blueWaves} width={2000} className="opacity-[10%]" />
+          <Image
+            alt="Blått månsken"
+            src={blueWaves}
+            width={2000}
+            className="opacity-[10%]"
+          />
         </div>
       </div>
       <div className="flex flex-col items-center md:px-52 pt-24 bg-eggshell">
@@ -82,10 +88,14 @@ export default function Services() {
         <div className="w-[180px] h-[1px] bg-lightolive z-20" />
         <div className="relative flex w-full justify-center gap-20 items-center pt-24 px-6 md:px-0">
           <div className="absolute top-[50px] mx-auto md:mx-0 md:static md:w-full w-[150px] md:max-w-[400px]">
-            <Image src={skanditechTeam} className="rounded-full" />
+            <Image
+              alt="Medarbetarna på Skanditech"
+              src={skanditechTeam}
+              className="rounded-full"
+            />
           </div>
           <div className="mt-8 md:mt-0 z-10">
-            <Image src={quotes} width={100} />
+            <Image alt="Citattecken" src={quotes} width={100} />
             <p className="text-xl md:text-3xl text-stoneolive mt-6 max-w-[600px]">
               Förändring är oundvikligt. Oförutsägbara utmaningar uppstår,
               prioriteringar ändras och nya möjligheter avslöjar sig. Därför har
@@ -107,6 +117,7 @@ export default function Services() {
             <div className="flex md:flex-row flex-col gap-6 md:gap-12">
               <div className="relative md:w-[400px] w-full h-[300px] mt-2">
                 <Image
+                  alt="Glada medarbetare"
                   src={happyEmployees}
                   fill
                   className={`object-cover object-top`}
@@ -136,6 +147,7 @@ export default function Services() {
             <div className="flex md:flex-row flex-col gap-6 md:gap-12">
               <div className="relative md:w-[400px] w-full h-[300px] mt-2">
                 <Image
+                  alt="Glada medarbetare"
                   src={happyEmployees}
                   fill
                   className={`object-cover object-top`}
@@ -164,6 +176,7 @@ export default function Services() {
             <div className="flex md:flex-row flex-col gap-6 md:gap-12">
               <div className="relative md:w-[400px] w-full h-[300px] mt-2">
                 <Image
+                  alt="Glada medarbetare"
                   src={happyEmployees}
                   fill
                   className={`object-cover object-top`}

@@ -20,6 +20,7 @@ export default function Contact() {
       <div className="relative flex flex-col w-full gap-4 overflow-clip pb-0 bg-gradient-to-r from-eggshell via-eggshell to-transparent h-screen">
         <div className="absolute md:-right-[200px] -z-10 w-full min-h-screen bg-eggshell">
           <Image
+            alt="Bild på glada medarbetare"
             src={happyEmployees}
             fill
             className={`${styles.hero} object-cover object-top opacity-50`}

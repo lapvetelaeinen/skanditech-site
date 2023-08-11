@@ -27,15 +27,15 @@ export default function Home() {
   }
 
   useEffect(() => {
-    function isElementVisible(element) {
-      const rect = element.getBoundingClientRect();
-      const viewportHeight =
-        window.innerHeight || document.documentElement.clientHeight;
-      if (rect.bottom < 0 || rect.top > viewportHeight) {
-        return false;
-      }
-      return true;
-    }
+    // function isElementVisible(element) {
+    //   const rect = element.getBoundingClientRect();
+    //   const viewportHeight =
+    //     window.innerHeight || document.documentElement.clientHeight;
+    //   if (rect.bottom < 0 || rect.top > viewportHeight) {
+    //     return false;
+    //   }
+    //   return true;
+    // }
 
     const windowHeight = getWindowHeight();
 
@@ -44,11 +44,11 @@ export default function Home() {
       const introEl = document.getElementById("intro");
       const uspHeading = document.getElementById("uspHeading");
 
-      const isVisible = isElementVisible(uspHeading);
-      console.log(isVisible);
+      // const isVisible = isElementVisible(uspHeading);
+      // console.log(isVisible);
 
       //CHECK IF THE INTRO SECTION IS REACHED
-      const progress = Math.floor((currentScrollY - windowHeight) / 5);
+      // const progress = Math.floor((currentScrollY - windowHeight) / 5);
 
       // if (currentScrollY > windowHeight) {
       //   introEl.style.position = "sticky";
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="pl-6 max-h-screen md:pl-0 w-full md:mx-52 flex justify-between md:pt-16 md:items-center z-40">
           <div>
             <h1 className="md:text-7xl text-6xl font-head text-skandiblue font-medium mb-4 md:mb-8 mt-24">
-              Krossa <br /> <strong>era mål</strong> <br /> med rätt{" "}
+              Uppnå <br /> <strong>era mål</strong> <br /> med rätt{" "}
               <br className="md:hidden block" />
               <strong>tech</strong>
             </h1>
@@ -108,9 +108,11 @@ export default function Home() {
                   Kontakta oss
                 </button>
               </Link>
-              <button className="border-2 hidden md:block border-stoneolive text-stoneolive hover:text-lightolive hover:border-s-stoneolive md:px-12 px-6 py-4 rounded-lg md:text-2xl text-lg hover:scale-105 duration-100">
-                Kundcase
-              </button>
+              <Link href={"/kundcase"}>
+                <button className="border-2 hidden md:block border-stoneolive text-stoneolive hover:text-lightolive hover:border-s-stoneolive md:px-12 px-6 py-4 rounded-lg md:text-2xl text-lg hover:scale-105 duration-100">
+                  Kundcase
+                </button>
+              </Link>
             </div>
           </div>
           <div className="md:max-w-[300px] max-w-[150px] md:block absolute right-2 bottom-0 md:static text-center">
