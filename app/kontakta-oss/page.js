@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link.js";
 import { useState } from "react";
 import Map from "../_components/Map.js";
 import { useForm } from "react-hook-form";
@@ -16,16 +17,18 @@ export default function Contact() {
 
   return (
     <main className="">
-      <div className="relative flex flex-col w-full gap-4 overflow-clip md:pt-20 pt-12 pb-0 bg-gradient-to-r from-eggshell via-eggshell to-transparent ">
+      <div className="relative flex flex-col w-full gap-4 overflow-clip pb-0 bg-gradient-to-r from-eggshell via-eggshell to-transparent h-screen">
         <div className="absolute md:-right-[200px] -z-10 w-full min-h-screen bg-eggshell">
           <Image
             src={happyEmployees}
             fill
-            className={`${styles.hero} object-cover object-top opacity-50 -translate-y-[100px]`}
+            className={`${styles.hero} object-cover object-top opacity-50`}
           />
         </div>
-        <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 mt-6">
-          <p className="uppercase">Start</p>
+        <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 md:mt-24 mt-16">
+          <Link href={"/"}>
+            <p className="uppercase">Start</p>
+          </Link>
           <p className="inline-block">/</p>
           <p className="uppercase">Kontakt</p>
         </div>
@@ -35,14 +38,14 @@ export default function Contact() {
               <h2 className="font-head font-medium text-xl text-lightolive uppercase">
                 Kontakta oss
               </h2>
-              <h1 className="md:text-6xl text-5xl font-head mt-6 mb-8 font-semibold">
+              <h1 className="md:text-6xl text-4xl font-head mt-6 mb-8 font-semibold">
                 Vilka möjligheter
                 <br className="hidden md:block" /> väntar på att
                 <br />
                 utforskas?
               </h1>
               <div className="w-[180px] h-[1px] bg-lightolive" />
-              <p className="text-2xl text-stoneolive pt-8 pb-14">
+              <p className="text-xl md:text-2xl text-stoneolive pt-8 pb-14">
                 Dela med dig av dina frågor och tankar
                 <br className="hidden md:block" /> så guidar vi dig på rätt
                 spår! <br className="hidden md:block" /> Du kan ringa och maila
@@ -112,7 +115,7 @@ export default function Contact() {
       </div>
       <div className="relative md:px-36 md:pb-36 bg-eggshell">
         <div className="flex md:flex-row flex-col gap-16">
-          <div className="md:inline-block flex flex-col items-center">
+          {/* <div className="md:inline-block flex flex-col items-center">
             <p className="text-2xl text-stoneolive">Skanditech AB</p>
             <p className="text-xl text-stoneolive mt-4">Besöksadress</p>
             <p className="text-lg text-lightolive">Rådhusesplanaden 6F</p>
@@ -134,6 +137,34 @@ export default function Contact() {
             </a>
             <p className="text-xl text-stoneolive mt-6">Öppettider</p>
             <p className="text-lg text-lightolive">Vardagar 8-17</p>
+          </div> */}
+
+          <div className="flex md:justify-end justify-center gap-16 text-right md:pb-0 pb-12">
+            <div className="md:inline-block flex flex-col items-center">
+              <p className="text-2xl text-stoneolive font-head font-medium">
+                Besöksadress
+              </p>
+              <p className="text-lg text-lightolive">Rådhusesplanaden 6F</p>
+              <p className="text-lg text-lightolive">903 28 Umeå</p>
+              <p className="text-2xl text-stoneolive font-head font-medium mt-4">
+                Kontakt
+              </p>
+              <p>
+                <a
+                  href="mailto:filip@skanditech.se"
+                  className="text-lg text-lightolive"
+                >
+                  filip@skanditech.se
+                </a>
+              </p>
+              <a href="tel:+46738780569" className="text-lg text-lightolive">
+                +46738780569
+              </a>
+              <p className="text-2xl text-stoneolive font-head font-medium mt-4">
+                Öppettider
+              </p>
+              <p className="text-lg text-lightolive">Vardagar 8-17</p>
+            </div>
           </div>
           <div className="flex-1">
             <Map />

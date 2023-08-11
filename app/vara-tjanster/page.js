@@ -7,23 +7,24 @@ import quotes from "../../public/quotes.svg";
 import blueWaves from "../../public/services-blue-waves.svg";
 import happyEmployees from "../../public/happy-employees.webp";
 import styles from "../../styles/Services.module.css";
-import Case from "../_components/Case";
 import Footer from "../_components/Footer";
 import CaseSection from "../_components/CaseSection";
 
 export default function Services() {
   return (
     <main>
-      <div className="relative flex flex-col w-full gap-4 overflow-clip md:pt-20 pt-12 pb-36 bg-gradient-to-r from-eggshell via-eggshell to-transparent">
+      <div className="relative flex flex-col w-full gap-4 overflow-clip pb-36 bg-gradient-to-r from-eggshell via-eggshell to-transparent">
         <div className="absolute md:-right-[200px] -z-10 w-full min-h-screen bg-eggshell">
           <Image
             src={happyEmployees}
             fill
-            className={`${styles.hero} object-cover object-top opacity-50 translate-y-[-100px]`}
+            className={`${styles.hero} object-cover object-top opacity-50 translate-y-[-10px]`}
           />
         </div>
-        <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 mt-6">
-          <p className="uppercase">Start</p>
+        <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 md:mt-24 mt-16">
+          <Link href={"/"}>
+            <p className="uppercase">Start</p>
+          </Link>
           <p className="inline-block">/</p>
           <p className="uppercase">Vad vi gör</p>
         </div>

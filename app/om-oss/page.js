@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Footer from "../_components/Footer.js";
 import quotes from "../../public/quotes-white.svg";
+import Link from "next/link.js";
 import ContactSection from "../_components/ContactSection.js";
-import gradientIcon from "../../public/gradient-icon.svg";
 import skanditechTeam from "../../public/skanditech-team.jpg";
-import skanditechIcon from "../../public/skanditech-icon.svg";
-import skanditechMask from "../../public/skanditech-mask.svg";
 import filip from "../../public/filip-lapvetelainen.jpg";
 import siyu from "../../public/siyu-luan.jpg";
 import happyEmployees from "../../public/happy-employees.webp";
@@ -15,19 +13,21 @@ import styles from "../../styles/Icon.module.css";
 export default function About() {
   return (
     <main className="">
-      <div className="relative flex flex-col w-full gap-4 overflow-clip md:pt-20 pt-12 pb-28 md:pb-36 bg-gradient-to-r from-eggshell via-eggshell to-transparent">
+      <div className="relative flex flex-col w-full gap-4 overflow-clip pb-28 bg-gradient-to-r from-eggshell via-eggshell to-transparent">
         <div className="absolute md:-right-[200px] -z-10 w-full min-h-screen bg-eggshell">
           <Image
             src={happyEmployees}
             fill
-            className={`${serviceStyle.hero} object-cover object-top opacity-50 translate-y-[-100px]`}
+            className={`${serviceStyle.hero} object-cover object-top opacity-50`}
           />
         </div>
         {/* <div className="absolute -z-10 top-0 right-0 -rotate-[50deg] translate-x-[500px] translate-y-[100px]">
           <Image src={gradientIcon} width={2000} className="opacity-[10%]" />
         </div> */}
-        <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 mt-6">
-          <p className="uppercase">Start</p>
+        <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 md:mt-24 mt-16">
+          <Link href={"/"}>
+            <p className="uppercase">Start</p>
+          </Link>
           <p className="inline-block">/</p>
           <p className="uppercase">Om oss</p>
         </div>

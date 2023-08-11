@@ -11,11 +11,17 @@ export default function Testimonials() {
   return (
     <main className="">
       <div className="fixed">
-        <div className="relative flex flex-col w-full gap-4 overflow-clip pt-12 md:pt-20 pb-6">
-          <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 mt-6">
-            <p className="uppercase">Start</p>
+        <div className="relative flex flex-col w-full gap-4 overflow-clip pb-6">
+          <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 md:mt-24 mt-16">
+            <Link href={"/"}>
+              <p className="uppercase">Start</p>
+            </Link>
             <p className="inline-block">/</p>
-            <p className="uppercase">Kundcase</p>
+            <Link href={"/kundcase"}>
+              <p className="uppercase">Kundcase</p>
+            </Link>
+            <p className="inline-block">/</p>
+            <p className="uppercase">Rouge nattklubb</p>
           </div>
         </div>
         <a href="#case">
@@ -27,7 +33,7 @@ export default function Testimonials() {
 
         <div className="flex px-6 md:px-36 gap-16 justify-between w-full md:mt-6">
           <div className="flex flex-1 flex-col mb-36">
-            <h1 className="md:text-5xl flex flex-col md:flex-row items-start text-4xl text-skandiblue font-head mb-4 font-semibold capitalize">
+            <h1 className="md:text-5xl flex flex-col md:flex-row items-start text-4xl text-skandiblue font-head mb-4 font-semibold">
               Biljettsystem och hemsida till Rouge nattklubb
             </h1>
             <p className="text-xl md:text-2xl text-lightolive mt-4 leading-normal">
