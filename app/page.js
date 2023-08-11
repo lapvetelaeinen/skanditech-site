@@ -234,13 +234,15 @@ export default function Home() {
             Tidigare projekt
           </h2>
         </div>
-        <Case
-          businessCase={{
-            name: "Rouge nattklubb",
-            title: "Biljettsystem och hemsida",
-            desc: "det blev kaos i början men senare löste vi allt",
-          }}
-        />
+        <Link href={"/kundcase/rouge"}>
+          <Case
+            businessCase={{
+              name: "Rouge nattklubb",
+              title: "Biljettsystem och hemsida",
+              desc: "det blev kaos i början men senare löste vi allt",
+            }}
+          />
+        </Link>
         <div className="flex flex-col items-center mt-24 md:mt-44">
           <Link href={"/kundcase"}>
             <button className="border-2 border-skandiblue px-12 py-4 text-skandiblue rounded-lg text-2xl hover:scale-105 duration-100 text-center mb-16">

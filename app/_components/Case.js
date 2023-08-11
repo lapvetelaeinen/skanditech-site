@@ -27,16 +27,15 @@ export default function Case({ businessCase }) {
           </Link>
         </div>
       </div>
-      <Link href={"/kundcase/rouge"}>
-        <div className="relative w-full h-[300px] md:w-[400px] md:h-[500px]">
-          <Image
-            alt="drinkbolaget project"
-            src={drinkbolaget}
-            fill
-            className="md:rounded-lg md:drop-shadow-card object-cover"
-          />
-        </div>
-      </Link>
+
+      <div className="relative w-full h-[300px] md:w-[400px] md:h-[500px]">
+        <Image
+          alt="drinkbolaget project"
+          src={drinkbolaget}
+          fill
+          className="md:rounded-lg md:drop-shadow-card object-cover"
+        />
+      </div>
     </div>
   );
 }
