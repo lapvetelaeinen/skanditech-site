@@ -67,14 +67,14 @@ export default function NavBar() {
     };
   }, []);
 
-  useEffect(() => {
-    console.log("CHANGE: ", isOpen);
-    isOpenRef.current = !isOpenRef.current;
-  }, [isOpen]);
+  // useEffect(() => {
+  //   console.log("info: ", isOpen);
+  //   isOpenRef.current = !isOpenRef.current;
+  // }, [isOpen]);
 
   const toggleBar = () => {
     toggleNav();
-    // isOpenRef.current = !isOpenRef.current;
+    isOpenRef.current = !isOpenRef.current;
   };
 
   return (
@@ -97,24 +97,24 @@ export default function NavBar() {
       >
         <span
           className={`absolute top-[50%] translate-y-[-50%] w-[40px] h-[2px] bg-lightolive rounded-sm transition-all ${
-            isOpenRef.current
+            isOpen
               ? "rotate-45 opacity-100"
               : "rotate-0 opacity-0 transition-none"
           }`}
         ></span>
         <span
           className={`w-[40px] h-[2px] bg-lightolive rounded-sm transition-all  ${
-            isOpenRef.current ? "opacity-0" : "opacity-100"
+            isOpen ? "opacity-0" : "opacity-100"
           }`}
         ></span>
         <span
           className={`w-[40px] h-[2px] bg-lightolive rounded-sm transition-all ${
-            isOpenRef.current ? "rotate-[-45deg]" : "rotate-0"
+            isOpen ? "rotate-[-45deg]" : "rotate-0"
           }`}
         ></span>
         <span
           className={`w-[40px] h-[2px] bg-lightolive rounded-sm transition-all ${
-            isOpenRef.current ? "opacity-0" : "opacity-100"
+            isOpen ? "opacity-0" : "opacity-100"
           }`}
         ></span>
       </div>

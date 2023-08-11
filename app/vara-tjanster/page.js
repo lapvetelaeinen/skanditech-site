@@ -97,7 +97,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col bg-eggshell gap-12 md:gap-16 z-10 md:pt-36 pt-24 md:px-56 pb-16">
+      <div className="flex flex-col bg-eggshell gap-6 md:gap-16 z-10 md:pt-36 pt-16 md:px-56 pb-16">
         <div className="flex px-6 py-4">
           <div className="flex flex-col gap-6 mb-3">
             <h3 className="text-4xl z-10 md:text-5xl text-skandiblue font-semibold ">
