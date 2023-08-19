@@ -239,7 +239,7 @@ export default function Home() {
             businessCase={{
               name: "Rouge nattklubb",
               title: "Biljettsystem och hemsida",
-              desc: "det blev kaos i början men senare löste vi allt",
+              desc: "Skräddarsytt biljettsystem för att minska på rörliga kostnader och höja kundlojaliteten.",
             }}
           />
         </Link>

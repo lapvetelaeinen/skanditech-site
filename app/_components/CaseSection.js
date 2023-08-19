@@ -16,7 +16,7 @@ export default function CaseSection() {
         businessCase={{
           name: "Rouge nattklubb",
           title: "Biljettsystem och hemsida",
-          desc: "det blev kaos i början men senare löste vi allt",
+          desc: "Skräddarsytt biljettsystem för att minska på rörliga kostnader och höja kundlojaliteten.",
         }}
       />
       <div className="flex flex-col items-center mt-24 md:mt-44">
