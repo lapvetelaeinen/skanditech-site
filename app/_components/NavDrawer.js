@@ -58,11 +58,11 @@ export default function NavDrawer() {
             Vad vi gör
           </p>
         </Link>
-        <Link href={"/kundcase"} className="w-full" onClick={handleClick}>
+        {/* <Link href={"/kundcase"} className="w-full" onClick={handleClick}>
           <p className="border-[1px] text-center border-x-0 border-t-0 py-8 border-lightolive text-2xl text-lightolive font-light">
             Kundcase
           </p>
-        </Link>
+        </Link> */}
       </div>
     </>
   );

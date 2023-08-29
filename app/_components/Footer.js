@@ -52,11 +52,11 @@ export default function Footer() {
               Vad vi gör
             </p>
           </Link>
-          <Link href={"/kundcase"}>
+          {/* <Link href={"/kundcase"}>
             <p className="inline-block border-2 whitespace-nowrap text-stoneolive border-lightolive px-6 py-1 rounded-xl hover:bg-lightolive hover:text-neutral-100 transition-all">
               Kundcase
             </p>
-          </Link>
+          </Link> */}
         </div>
 
         <div className="flex justify-end gap-16 text-right md:pb-0 pb-36">

@@ -115,14 +115,14 @@ export default function Services() {
               Flexibel planering
             </h3>
             <div className="flex md:flex-row flex-col gap-6 md:gap-12">
-              <div className="relative md:w-[400px] w-full h-[300px] mt-2">
+              {/* <div className="relative md:w-[400px] w-full h-[300px] mt-2">
                 <Image
                   alt="Glada medarbetare"
                   src={happyEmployees}
                   fill
                   className={`object-cover object-top`}
                 />
-              </div>
+              </div> */}
 
               <p className="text-stoneolive flex-1 text-xl">
                 Vi förstår vikten av att vara flexibla i en ständigt föränderlig
@@ -145,14 +145,14 @@ export default function Services() {
               Stegvis utveckling
             </h3>
             <div className="flex md:flex-row flex-col gap-6 md:gap-12">
-              <div className="relative md:w-[400px] w-full h-[300px] mt-2">
+              {/* <div className="relative md:w-[400px] w-full h-[300px] mt-2">
                 <Image
                   alt="Glada medarbetare"
                   src={happyEmployees}
                   fill
                   className={`object-cover object-top`}
                 />
-              </div>
+              </div> */}
 
               <p className="text-stoneolive flex-1 text-xl">
                 Genom att dela upp projektet i mindre delmoment kan vi börja
@@ -174,14 +174,14 @@ export default function Services() {
               Nära dialog
             </h3>
             <div className="flex md:flex-row flex-col gap-6 md:gap-12">
-              <div className="relative md:w-[400px] w-full h-[300px] mt-2">
+              {/* <div className="relative md:w-[400px] w-full h-[300px] mt-2">
                 <Image
                   alt="Glada medarbetare"
                   src={happyEmployees}
                   fill
                   className={`object-cover object-top`}
                 />
-              </div>
+              </div> */}
 
               <p className="text-stoneolive flex-1 text-xl">
                 Förhoppningsvis har det tydligt framgått att era insikter och er
@@ -198,11 +198,11 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="flex w-full pl-6 md:pl-0 md:justify-center bg-eggshell">
+      <div className="flex w-full pl-6 md:pl-0 pb-16 md:justify-center bg-eggshell">
         <div className="w-[250px] h-[1px] bg-lightolive" />
       </div>
       {/*TESTIMONIALS SECTION*/}
-      <CaseSection />
+      {/* <CaseSection /> */}
       {/*END TESTIMONIALS SECTION*/}
       {/*CONTACT SECTION*/}
       <ContactSection color="white" />

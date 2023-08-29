@@ -108,11 +108,11 @@ export default function Home() {
                   Kontakta oss
                 </button>
               </Link>
-              <Link href={"/kundcase"}>
+              {/* <Link href={"/kundcase"}>
                 <button className="border-2 hidden md:block border-stoneolive text-stoneolive hover:text-lightolive hover:border-s-stoneolive md:px-12 px-6 py-4 rounded-lg md:text-2xl text-lg hover:scale-105 duration-100">
                   Kundcase
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="md:max-w-[300px] max-w-[150px] md:block absolute right-2 bottom-0 md:static text-center">
@@ -124,9 +124,11 @@ export default function Home() {
               />
               <div className="absolute md:bottom-5 md:left-5 bottom-2 left-2 md:w-[50px] md:h-[50px] w-[30px] h-[30px] bg-gradient-to-t from-green-500 to-auroragreen drop-shadow-md rounded-full"></div>
             </div>
-            <button className="bg-skandiblue hidden md:inline hover:scale-105 duration-100 px-12 py-4 rounded-full text-2xl text-white">
-              Prata med Filip
-            </button>
+            <Link href="/kontakta-oss">
+              <button className="bg-skandiblue hidden md:inline hover:scale-105 duration-100 px-12 py-4 rounded-full text-2xl text-white">
+                Prata med Filip
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -225,7 +227,7 @@ export default function Home() {
         </div>
       </div>
       {/*TESTIMONIALS SECTION*/}
-      <div className="md:px-52 pb-24 pt-12 md:pt-36 bg-eggshell">
+      {/* <div className="md:px-52 pb-24 pt-12 md:pt-36 bg-eggshell">
         <div className="md:text-center flex flex-col items-center">
           <h3 className="font-head font-medium text-xl text-lightolive uppercase">
             Referenser
@@ -251,7 +253,7 @@ export default function Home() {
           </Link>
           <div className="md:w-[350px] w-[150px] h-[1px] bg-lightolive" />
         </div>
-      </div>
+      </div> */}
       {/*END TESTIMONIALS SECTION*/}
       {/*CONTACT SECTION*/}
       <ContactSection color="white" />

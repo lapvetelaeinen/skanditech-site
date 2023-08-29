@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import skanditechIcon from "../../public/skanditech-icon.svg";
 import filip from "../../public/filip-lapvetelainen.jpg";
 
@@ -18,7 +19,7 @@ export default function ContactSection({ color }) {
           className="w-[1500px] scale-[250%] md:scale-100 pointer-events-none select-none"
         />
       </div>
-      <div className="mx-6 md:mx-0">
+      <div className="mx-6 md:mx-0 z-10">
         <h3 className="font-head font-medium text-xl text-lightolive md:mt-12 uppercase">
           Ta kontakt
         </h3>
@@ -48,9 +49,11 @@ export default function ContactSection({ color }) {
           />
           <div className="absolute bottom-5 left-5 w-[50px] h-[50px] bg-gradient-to-t from-green-500 to-auroragreen drop-shadow-md rounded-full"></div>
         </div>
-        <button className="relative bg-skandiblue hover:scale-105 duration-100 px-12 py-4 rounded-full text-2xl text-white z-10">
-          Prata med Filip
-        </button>
+        <Link href="/kontakta-oss">
+          <button className="relative bg-skandiblue hover:scale-105 duration-100 px-12 py-4 rounded-full text-2xl text-white z-10">
+            Prata med Filip
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -137,12 +137,12 @@ export default function NavBar() {
             <div className="absolute bg-stoneolive h-[1px] w-0 group-hover:w-full transition-all"></div>
           </div>
         </Link>
-        <Link href="/kundcase">
+        {/* <Link href="/kundcase">
           <div className="relative group">
             <p className="cursor-pointer hover:text-lightolive">Kundcase</p>
             <div className="absolute bg-stoneolive h-[1px] w-0 group-hover:w-full transition-all"></div>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

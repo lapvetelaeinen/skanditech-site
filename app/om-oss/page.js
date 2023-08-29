@@ -154,14 +154,14 @@ export default function About() {
               Medgrundare
             </p>
             <p className="text-xl italic text-lightolive">
-              Data analyst och mjukvaruutvecklare
+              Huvudansvarig mjukvaruutvecklare
             </p>
-            <p className="text-xl max-w-[400px] pt-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quam sit vero inventore. Porro, animi commodi
-              excepturi distinctio, iste ipsam blanditiis aut temporibus
-              consequatur autem magni enim similique omnis iure.
-            </p>
+            {/* <p className="text-xl max-w-[400px] pt-8">
+              Siyu är huvudansvarig för utvecklingen av olika projekt. Med sin
+              bakgrund som forskningsassistent vid institutionen för tillämpad
+              fysik och elektronik på Umeå Universitet är han en självklar
+              person för rollen som ansvarig för utvecklingen av olika projekt.
+            </p> */}
           </div>
           <div className="flex flex-col justify-center items-center">
             <Image
@@ -178,12 +178,9 @@ export default function About() {
             <p className="text-xl italic text-lightolive">
               VD och account manager
             </p>
-            <p className="text-xl max-w-[400px] pt-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quam sit vero inventore. Porro, animi commodi
-              excepturi distinctio, iste ipsam blanditiis aut temporibus
-              consequatur autem magni enim similique omnis iure.
-            </p>
+            {/* <p className="text-xl max-w-[400px] pt-8">
+              M
+            </p> */}
           </div>
         </div>
       </div>
