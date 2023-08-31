@@ -68,17 +68,17 @@ export default function Services() {
           <h3 className="text-3xl">Nära dialog</h3>
         </div>
       </div>
-      <div className="relative w-full -z-0">
-        <div className="absolute top-0 right-0 bg-eggshell">
-          <Image
-            alt="Blått månsken"
-            src={blueWaves}
-            width={2000}
-            className="opacity-[10%]"
-          />
+      <div className="flex relative flex-col items-center md:px-52 pt-24 bg-eggshell overflow-clip">
+        <div className="absolute top-0 right-0 2xl:top-[-600px] 2xl:left-0 w-full -z-0">
+          <div className="">
+            <Image
+              alt="Blått norrsken"
+              src={blueWaves}
+              width={2000}
+              className="opacity-[10%]"
+            />
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col items-center md:px-52 pt-24 bg-eggshell">
         <h3 className="font-head font-medium text-xl text-lightolive uppercase z-20">
           Agil utveckling
         </h3>
