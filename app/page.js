@@ -97,10 +97,8 @@ export default function Home() {
               <strong>tech</strong>
             </h1>
             <p className="md:text-3xl text-2xl text-stoneolive mb-6 md:mb-14">
-              Vi skräddarsyr <br /> <strong>hemsidor</strong> och{" "}
-              <strong>appar</strong> <br /> med fokus på era
-              <br />
-              specifika mål och <br className="md:hidden block" /> utmaningar
+              Webbutveckling <br /> fokuserad på <strong>era mål</strong> <br />{" "}
+              och utmaningar
             </p>
             <div className="flex gap-6">
               <Link href={"/kontakta-oss"}>
