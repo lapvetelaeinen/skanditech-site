@@ -22,7 +22,7 @@ export default function Case({ businessCase }) {
           <div className="md:hidden absolute flex-1 block w-full h-[80px] bg-gradient-to-t from-eggshell via-eggshell to-transparent"></div>
         </div>
         <div className="flex mt-2 md:mt-0 pt-6 md:pt-0">
-          <Link href={businessCase.link} className="z-10 w-full px-4 md:px-0">
+          <Link href="/kundcase/rouge" className="z-10 w-full px-4 md:px-0">
             <button className="flex-1 md:flex-initial md:mx-0 my-4 px-12 py-4 bg-skandiblue text-neutral-100 rounded-lg text-xl hover:scale-105 duration-100 text-center md:mt-12 w-full">
               Läs mer om projektet
             </button>
