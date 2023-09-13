@@ -29,7 +29,7 @@ export default function Case({ businessCase }) {
           </Link>
         </div>
       </div>
-      <Link href={businessCase.link}>
+      <Link href="/kundcase/rouge">
         <div className="relative w-[100vw] h-[300px] md:w-[400px] md:h-[500px] md:rounded-lg md:drop-shadow-card overflow-clip">
           <video
             className="absolute left-0 top-0 hover:scale-105 transition-all cursor-pointer"
@@ -37,7 +37,7 @@ export default function Case({ businessCase }) {
             autoPlay
             muted
             loop
-            src={businessCase.video}
+            src="/use-ticket-single.mp4"
             style={{ width: "100vw" }}
           />
         </div>
