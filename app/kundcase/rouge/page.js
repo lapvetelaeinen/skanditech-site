@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import drinkbolaget from "../../../public/drinkbolaget.jpg";
+import rougeHome from "../../../public/rouge-homepage.jpg";
+import rougeBuy from "../../../public/rouge-buy-ticket.jpg";
+import rougeTicket from "../../../public/rouge-ticket.jpg";
 import ContactSection from "@/app/_components/ContactSection";
 import skanditechIcon from "../../../public/skanditech-icon.svg";
 import arrowDown from "../../../public/chevron-down.svg";
@@ -31,7 +34,7 @@ export default function Testimonials() {
         </a>
         {/*HEADER START*/}
 
-        <div className="flex px-6 md:px-36 gap-16 justify-between w-full md:mt-6">
+        <div className="flex px-6 md:px-36 gap-16 justify-between w-full md:mt-">
           <div className="flex flex-1 flex-col mb-36">
             <h1 className="md:text-5xl flex flex-col md:flex-row items-start text-4xl text-skandiblue font-head mb-4 font-semibold">
               Biljettsystem och hemsida till Rouge nattklubb
@@ -54,25 +57,31 @@ export default function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="flex-1 hidden md:block">
-            <Image
-              alt="drinkbolaget project"
-              src={drinkbolaget}
-              className="md:rounded-lg md:drop-shadow-card object-cover w-full h-[300px]"
-            />
+          <div className="flex-1 asbolute top-0 hidden md:block">
+            <div className="relative w-full h-[300px] md:w-full md:h-full md:rounded-lg md:drop-shadow-card overflow-clip">
+              <video
+                className="absolute md:top-[-40%] left-0 top-[-50px]"
+                playsInline
+                autoPlay
+                muted
+                loop
+                src="/rouge-video.mp4"
+                style={{ width: "100vw" }}
+              />
+            </div>
           </div>
         </div>
       </div>
       {/*EARLIER PROJECTS START*/}
       <div
         id="case"
-        className="relative top-[80vh] pt-24 rounded-lg flex flex-col mx-0 bg-gradient-to-tl from-neutral-200 to-[#f3f2f0]"
+        className="relative top-[95vh] md:pt-12 rounded-lg flex flex-col mx-0 bg-[#f3f2f0]"
       >
-        <div className="flex flex-row gap-6 md:gap-12 md:px-36 overflow-x-auto snap-x snap-mandatory w-full">
+        {/* <div className="flex flex-row gap-6 md:gap-12 md:px-36 overflow-x-auto snap-x snap-mandatory w-full">
           <div className="relative ml-4 md:ml-0 md:flex-1 w-[300px] h-[300px] flex-shrink-0 snap-start">
             <Image
               alt="drinkbolaget project"
-              src={drinkbolaget}
+              src={rougeHome}
               fill
               className="object-cover md:rounded-lg"
             />
@@ -80,7 +89,7 @@ export default function Testimonials() {
           <div className="relative md:flex-1 w-[300px] h-[300px] flex-shrink-0 snap-start">
             <Image
               alt="drinkbolaget project"
-              src={drinkbolaget}
+              src={rougeBuy}
               fill
               className="object-cover md:rounded-lg"
             />
@@ -88,23 +97,45 @@ export default function Testimonials() {
           <div className="relative md:flex-1 w-[300px] h-[300px] flex-shrink-0 snap-start">
             <Image
               alt="drinkbolaget project"
-              src={drinkbolaget}
+              src={rougeTicket}
               fill
               className="object-cover md:rounded-lg"
             />
+          </div>
+        </div> */}
+        <div className="flex md:hidden md:flex-row flex-col justify-between gap-12 md:mt-12 md:px-36">
+          <div className="flex-1">
+            <div className="relative w-full h-[500px] md:rounded-lg md:drop-shadow-card overflow-clip">
+              <video
+                className="absolute md:top-[-40%] left-0 top-[-50px]"
+                playsInline
+                autoPlay
+                muted
+                loop
+                src="/rouge-video.mp4"
+                style={{ width: "100vw" }}
+              />
+            </div>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col-reverse justify-between gap-12 mt-12 md:mt-36 md:px-36">
+
+        <div className="flex md:flex-row flex-col-reverse justify-between gap-12 md:px-36 md:pb-24">
           <div className="flex-1">
-            <Image
-              alt="drinkbolaget project"
-              src={drinkbolaget}
-              className="object-cover md:rounded-lg w-full h-[500px]"
-            />
+            <div className="relative md:w-[90%] md:h-[700px] h-[500px] w-[100vw] md:rounded-lg overflow-clip">
+              <video
+                className="absolute left-0 "
+                playsInline
+                autoPlay
+                muted
+                loop
+                src="/rouge-case-demo.mp4"
+                style={{ width: "100vw" }}
+              />
+            </div>
           </div>
-          <div className="flex-1 mx-6 md:mx-0">
+          <div className="flex-1 mx-6 md:mx-0 md:mt-36 mt-16">
             <h4 className="text-4xl font-head font-semibold text-stoneolive">
-              Målsättning
+              Uppdraget
             </h4>
             <p className="text-xl text-lightolive mt-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
@@ -116,7 +147,8 @@ export default function Testimonials() {
             </p>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col-reverse justify-between gap-12 mt-12 md:mt-24 md:px-36">
+        {/* LÄGG TILL SEN */}
+        {/* <div className="flex md:flex-row flex-col-reverse justify-between gap-12 mt-12 md:mt-24 md:px-36 md:pb-36">
           <div className="flex-1">
             <Image
               alt="drinkbolaget project"
@@ -137,9 +169,9 @@ export default function Testimonials() {
               voluptatibus? Nostrum consequatur iusto recusandae.
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col gap-12 md:px-60 pt-12 pb-16 md:py-24">
+        {/* <div className="flex flex-col gap-12 md:px-60 pt-12 pb-16 md:py-24">
           <div className="flex-1 px-6 md:px-0">
             <h4 className="text-5xl text-center font-head font-semibold text-stoneolive pt-8 md:pt-0">
               Resultat
@@ -171,7 +203,7 @@ export default function Testimonials() {
               <p className="text-2xl text-lightolive">Högre konvertering</p>
             </div>
           </div>
-        </div>
+        </div> */}
         {/*CONTACT SECTION*/}
         <ContactSection color="eggshell" />
         {/*FOOTER*/}

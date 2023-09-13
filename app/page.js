@@ -225,7 +225,7 @@ export default function Home() {
         </div>
       </div>
       {/*TESTIMONIALS SECTION*/}
-      {/* <div className="md:px-52 pb-24 pt-12 md:pt-36 bg-eggshell">
+      <div className="md:px-52 pb-24 pt-12 md:pt-36 bg-eggshell">
         <div className="md:text-center flex flex-col items-center">
           <h3 className="font-head font-medium text-xl text-lightolive uppercase">
             Referenser
@@ -234,15 +234,17 @@ export default function Home() {
             Tidigare projekt
           </h2>
         </div>
-        <Link href={"/kundcase/rouge"}>
-          <Case
-            businessCase={{
-              name: "Rouge nattklubb",
-              title: "Biljettsystem och hemsida",
-              desc: "Skräddarsytt biljettsystem för att minska på rörliga kostnader och höja kundlojaliteten.",
-            }}
-          />
-        </Link>
+
+        <Case
+          businessCase={{
+            name: "Rouge nattklubb",
+            link: "/kundcase/rouge",
+            video: "/use-ticket-single.mp4",
+            title: "Biljettsystem och hemsida",
+            desc: "Skräddarsytt biljettsystem för att minska på rörliga kostnader och höja kundlojaliteten.",
+          }}
+        />
+
         <div className="flex flex-col items-center mt-24 md:mt-44">
           <Link href={"/kundcase"}>
             <button className="border-2 border-skandiblue px-12 py-4 text-skandiblue rounded-lg text-2xl hover:scale-105 duration-100 text-center mb-16">
@@ -251,7 +253,7 @@ export default function Home() {
           </Link>
           <div className="md:w-[350px] w-[150px] h-[1px] bg-lightolive" />
         </div>
-      </div> */}
+      </div>
       {/*END TESTIMONIALS SECTION*/}
       {/*CONTACT SECTION*/}
       <ContactSection color="white" />
