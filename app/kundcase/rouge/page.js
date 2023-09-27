@@ -15,7 +15,7 @@ export default function Testimonials() {
     <main className="">
       <div className="fixed">
         <div className="relative flex flex-col w-full gap-4 overflow-clip pb-6">
-          <div className="flex gap-2 md:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 md:mt-24 mt-16">
+          <div className="flex gap-2 lg:mx-36 mx-6 md:text-lg text-sm text-lightolive py-4 md:mt-24 mt-16">
             <Link href={"/"}>
               <p className="uppercase">Start</p>
             </Link>
@@ -34,7 +34,7 @@ export default function Testimonials() {
         </a>
         {/*HEADER START*/}
 
-        <div className="flex px-6 md:px-36 gap-16 justify-between w-full md:mt-">
+        <div className="flex px-6 lg:px-36 gap-16 justify-between w-full md:mt-">
           <div className="flex flex-1 flex-col mb-36">
             <h1 className="md:text-5xl flex flex-col md:flex-row items-start text-4xl text-skandiblue font-head mb-4 font-semibold">
               Biljettsystem och hemsida till Rouge nattklubb
@@ -119,9 +119,9 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="flex md:flex-row flex-col-reverse justify-between gap-12 md:px-36 md:pb-24">
-          <div className="flex-1">
-            <div className="relative md:w-[90%] md:h-[700px] h-[500px] w-[100vw] md:rounded-lg overflow-clip">
+        <div className="flex md:flex-row flex-col-reverse justify-between gap-12 md:pb-24">
+          <div className="w-full md:w-[50%] flex justify-end">
+            <div className="relative md:w-[90%] xl:w-[500px] md:h-[700px] h-[500px] w-[100vw] md:rounded-lg overflow-clip">
               <video
                 className="absolute left-0 "
                 playsInline
@@ -133,18 +133,64 @@ export default function Testimonials() {
               />
             </div>
           </div>
-          <div className="flex-1 mx-6 md:mx-0 md:mt-36 mt-16">
+          <div className="w-full md:w-[50%] px-6 md:mx-0 mt-12 md:pr-12 lg:pr-24 xl:pr-44 2xl:pr-96">
             <h4 className="text-4xl font-head font-semibold text-stoneolive">
               Uppdraget
             </h4>
-            <p className="text-xl text-lightolive mt-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              maxime quam, illo unde distinctio dolorem quia doloribus tenetur
-              accusamus, fugit sunt quas voluptates beatae. Ea blanditiis unde
-              officia consectetur vel ipsa ut, fugit saepe praesentium quis, rem
-              rerum voluptatum laboriosam eos eaque commodi dolor voluptas
-              voluptatibus? Nostrum consequatur iusto recusandae.
+            <p className="text-xl text-neutral-500 mt-2 font-semibold">
+              Rouge gav oss i uppdrag att skräddarsy ett biljettsystem som
+              skulle göra det möjligt att skapa och sälja biljetter till deras
+              olika evenemang.
             </p>
+            <h2 className="text-2xl font-head text-stoneolive font-semibold mt-12">
+              Affärsvärden
+            </h2>
+            <p className="text-lg text-lightolive">
+              Leveransen av den digitala lösningen resulterade i tre olika
+              affärsvärden:
+            </p>
+            <p className="text-lg text-lightolive mt-2 italic">
+              - Ökad effektivitet <br /> - Förstärkt varumärke <br /> - Ny
+              kommunikationskanal
+            </p>
+            <div className="mt-12">
+              <h2 className="text-2xl font-head text-stoneolive font-semibold">
+                Ökad effektivitet
+              </h2>
+              <p className="text-lg text-lightolive">
+                I och med att gästerna nu kan köpa biljetter på förhand eller
+                när de står och väntar i kön till entrén så undviks flaskhalsen
+                som kan uppstå framme vid kassan. Istället checkas gästerna in
+                med två enkla knapptryck av personalen i entrén.
+              </p>
+            </div>
+            <div className="mt-12">
+              <h2 className="text-2xl font-head text-stoneolive font-semibold">
+                Förstärkt varumärke
+              </h2>
+              <p className="text-lg text-lightolive">
+                Utöver smidigare incheckningar så har biljettsystemet stärkt
+                varumärket för nattklubben. I och med att Rouge nu har full
+                kontroll över biljettförsäljningen så kan de utforma
+                användarupplevelsen i linje med deras grafiska profil och
+                tonalitet. Med hjälp av lekfulla element i användarupplevelsen
+                så har Rouge lyckats skapa ett engagemang mellan gästerna och
+                varumärket som annars inte hade ägt rum.
+              </p>
+            </div>
+            <div className="mt-12">
+              <h2 className="text-2xl font-head text-stoneolive font-semibold">
+                Ny kommunikationskanal
+              </h2>
+              <p className="text-lg text-lightolive">
+                Vid betalning av biljetten anger gästen sin e-postadress dit
+                biljett och bekräftelsemail skickas. Gästen ges möjlighet att
+                välja om denne vill ta emot nyhetsbrev angående biljettsläpp och
+                uppkommande evenemang från Rouge. Detta skapar en kraftfull
+                kommunikationskanal för Rouge som nu kan nå en stor del av deras
+                målgrupp i form av mailutskick.
+              </p>
+            </div>
           </div>
         </div>
         {/* LÄGG TILL SEN */}

@@ -80,7 +80,7 @@ export default function NavBar() {
   return (
     <div
       id="nav"
-      className="w-full h-[70px] flex items-center justify-center px-6 py-4 md:px-36 md:py-6 fixed top-0 transition-all duration-300"
+      className="w-full h-[70px] flex items-center justify-center px-6 py-4 lg:px-36 md:py-6 fixed top-0 transition-all duration-300"
     >
       <div className="flex-1 md:static absolute top-0 left-6 hover:cursor-pointer">
         <Link href="/">
