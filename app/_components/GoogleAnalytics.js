@@ -11,10 +11,16 @@ export default function GoogleAnalytics() {
 
   const gtmId = "GTM-W53SWH5C";
 
+  const helpNavigation = (gtmId, url) => {
+    window.gtag("config", gtmId, {
+      page_path: url,
+    });
+  };
+
   useEffect(() => {
     const url = pathname + searchParams.toString();
-    pageview(gtmId, url);
-  }, [pathname, searchParams, gtmId]);
+    helpNavigation(gtmId, url);
+  }, [pathname, searchParams]);
 
   return <></>;
 }
