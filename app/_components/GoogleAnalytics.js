@@ -19,6 +19,9 @@ export default function GoogleAnalytics() {
 
   useEffect(() => {
     const url = pathname + searchParams.toString();
+    if (typeof window !== undefined) {
+      return;
+    }
     helpNavigation(gtmId, url);
   }, [pathname, searchParams]);
 
