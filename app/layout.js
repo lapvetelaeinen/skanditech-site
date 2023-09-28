@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
             `,
             }}
           />
-          <GoogleAnalytics />
+          {/* <GoogleAnalytics /> */}
           <div className="absolute z-50 w-full">
             <NavContextProvider>
               <NavDrawer />
