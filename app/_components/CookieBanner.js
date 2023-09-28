@@ -8,8 +8,11 @@ export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState(false);
 
   useEffect(() => {
-    const storedCookieConsent = getLocalStorage("cookie_consent", null);
-    setCookieConsent(storedCookieConsent);
+    const storedCookieConsent = localStorage.getItem("cookie_consent");
+
+    if (storedCookieConsent) {
+      setCookieConsent(storedCookieConsent);
+    }
   }, [cookieConsent]);
 
   const acceptAll = () => {
