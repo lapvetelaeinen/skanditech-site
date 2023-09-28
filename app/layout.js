@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
   // };
 
   return (
-    <html lang="en">
+    <html lang="sv">
       <body
         className={`${inter.variable} ${rubik.variable} ${lato.className} bg-eggshell`}
       >
