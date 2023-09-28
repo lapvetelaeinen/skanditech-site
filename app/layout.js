@@ -5,7 +5,6 @@ import NavContextProvider from "@/context/NavContextProvider";
 import NavDrawer from "./_components/NavDrawer";
 import Script from "next/script";
 import CookieBanner from "./_components/CookieBanner";
-import GoogleAnalytics from "./_components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const rubik = Rubik({ subsets: ["latin"], variable: "--font-rubik" });
@@ -85,7 +84,7 @@ export default function RootLayout({ children }) {
             `,
             }}
           />
-          {/* <GoogleAnalytics /> */}
+
           <div className="absolute z-50 w-full">
             <NavContextProvider>
               <NavDrawer />
